@@ -68,7 +68,7 @@ npm start
 
 - `npm run dev` - Start both frontend and backend in development mode
 - `npm run build` - Build the frontend for production
-- `npm run start` - Start the backend server
+- `npm run start` - Build frontend and start backend server
 - `npm install:all` - Install all dependencies
 
 ### Frontend
@@ -89,6 +89,19 @@ The backend provides the following endpoints:
 
 - `GET /api/health` - Health check endpoint
 - `GET /api` - Welcome message
+
+## Production Deployment
+
+In production, the backend serves the frontend static files:
+
+1. Build the frontend: `npm run build`
+2. Start the backend: `npm run start` (or `npm run start:prod` to build and start)
+
+The backend will:
+
+- Serve API routes at `/api/*`
+- Serve static files from `frontend/dist/`
+- Serve `index.html` for all other routes (SPA routing)
 
 ## Technologies
 
