@@ -1,0 +1,19 @@
+{
+  "name": "mono-repo-template",
+  "version": "1.0.0",
+  "description": "Monorepo template with React frontend and Node.js backend",
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "dev": "npm run dev --workspace=frontend & npm run dev --workspace=backend",
+    "install:all": "npm install",
+    "build": "npm run build --workspace=frontend",
+    "start": "npm run start --workspace=backend"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=9.0.0"
+  }
+}
