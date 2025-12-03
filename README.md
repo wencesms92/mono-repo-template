@@ -39,7 +39,7 @@ npm run dev
 
 This will start:
 
-- Frontend: http://localhost:3000 (React development server)
+- Frontend: http://localhost:3000 (Vite dev server)
 - Backend: http://localhost:3001 (Express server)
 
 ### Run individually
@@ -73,9 +73,10 @@ npm start
 
 ### Frontend
 
-- `npm run dev` / `npm start` - Start React development server
+- `npm run dev` / `npm start` - Start Vite development server
 - `npm run build` - Build for production
-- `npm test` - Run tests
+- `npm run preview` - Preview production build
+- `npm test` - Run tests (Vitest)
 
 ### Backend
 
@@ -91,7 +92,7 @@ The backend provides the following endpoints:
 
 ## Technologies
 
-- **Frontend**: React 19, TypeScript, Create React App
+- **Frontend**: React 19, TypeScript, Vite
 - **Backend**: Node.js, Express, CORS
 
 ## License
